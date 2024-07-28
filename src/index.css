@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Korataki";
+  src: url("./assets/fonts/Korataki.ttf") format("truetype");
+}
+
+:root {
+  --font-lato: "Lato", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --font-korataki: "Korataki", sans-serif;
+  color-scheme: light;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  body {
+    @apply font-lato text-n-1 text-base leading-4;
+  }
+}
